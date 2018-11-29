@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
     inicializa_tlb();
 
     if (argc != 2) {
-        fprintf(stderr,"Usar: ./proj02.out addresses.txt\n");
+        fprintf(stderr,"Para Usar: ./trabalho2 addresses.txt\n");
         return -1;
     }
 
@@ -52,12 +52,12 @@ int main(int argc, char *argv[]) {
     arq_enderecos_logicos= fopen(argv[1], "r");
 
     if(arq_enderecos_logicos == NULL){
-		printf("Error opening file\n");
+		printf("Erro ao abrir o arquivo!\n");
 		return -1;
 	}
 
     if(hd == NULL){
-		printf("Error opening file\n");
+		printf("Erro ao abrir o arquivo!\n");
 		return -1;
 	}
 
